@@ -1,0 +1,53 @@
+.collabs {
+  background-color: #201139;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  margin-top: 120px;
+}
+
+.collabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #201139;
+  padding: 30px;
+}
+
+.collab {
+  width: 130px;
+  height: 130px;
+  margin: 30px;
+}
+
+.collab img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.collab p {
+  color: white;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 920px) {
+  .collabs {
+    height: 100%;
+  }
+  .title {
+    margin-top: 100px;
+  }
+  .collabs-container {
+    padding: 30px 10px;
+  }
+  .collab {
+    margin: 40px 20px;
+  }
+}

@@ -1,0 +1,98 @@
+.dialog-container {
+  background-color: black;
+  font-family: "Assistent", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-card {
+  padding: 50px;
+}
+.btn-login {
+  width: 100%;
+  height: 4vh;
+  margin-top: 40px;
+  background-color: #201139;
+  color: #8c46fe;
+  border-radius: 2px;
+  border: 1px solid #8c46fe;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.disabled {
+  width: 100%;
+  height: 4vh;
+  margin-top: 40px;
+  font-size: 18px;
+  cursor: not-allowed;
+  background-color: gray;
+  border: 1px solid gray;
+  color: white;
+}
+
+/* .btn-google {
+  width: 100%;
+  height: 4vh;
+  margin-top: 10px;
+  background-color: #8c46fe;
+  color: #cfd8e1;
+  border-radius: 2px;
+  border: 1px solid #cfd8e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+.right-card {
+  background-image: url("../../assets/login-img.jpg");
+  background-size: cover; /* Add this line */
+  margin: 0;
+  width: 70%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  font-family: "Assistent", sans-serif;
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  justify-content: flex-end; /* Add this line */
+  /* align-items: center; */
+  text-align: left;
+}
+.right-card h1 {
+  color: #8c46fe;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px;
+}
+.right-card h3 {
+  font-weight: 400;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.btn-change-login {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.reset-password-container {
+  background-color: black;
+  width: 40%;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 920px) {
+  .reset-password-container {
+    width: 100%;
+    padding:0;
+  }
+}

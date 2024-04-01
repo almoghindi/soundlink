@@ -1,0 +1,202 @@
+.swipe-page {
+  min-height: 60vh;
+  background-color: #201139;
+  width: 100%;
+  padding: 70px 0;
+}
+
+.swipe-buttons {
+  display: flex;
+  justify-content: space-between;
+  /* box-sizing: border-box; */
+  padding: 16px;
+  width: 302px;
+  height: 20px;
+  align-items: center;
+  background-color: black;
+  margin: auto;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.swipe-button {
+  background-color: #8c46fe;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-btn {
+  background-color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: black;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tinder-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filters-container {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 12px 0;
+}
+
+.filters-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  height: 100%; /* Make the container take full height */
+  border: 1px solid black;
+}
+
+.filters-container .radio-button {
+  background: #201139;
+  text-align: center;
+  color: #8c46fe;
+  border: 1px solid #8c46fe;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 60px;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.filters-container .radio-button-selected {
+  background: #8c46fe;
+  text-align: center;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 60px;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.filters-container .radio-button:hover {
+  background: #ddd;
+}
+
+.filters-container .radio-button-selected:hover {
+  background: #8c46fe;
+}
+
+.filters-container .radio-button-step4 {
+  background: #201139;
+  text-align: center;
+  color: #8c46fe;
+  border: 1px solid #8c46fe;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100px;
+  font-size: 12px;
+}
+
+.filters-container .radio-button-selected-step4 {
+  background: #8c46fe;
+  text-align: center;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100px;
+  font-size: 12px;
+}
+
+.filters-container .radio-button:hover-step4 {
+  background: #ddd;
+}
+
+.filters-container .radio-button-selected:hover-step4 {
+  background: #8c46fe;
+}
+
+.distance-filter,
+.show-filter,
+.paid-filter {
+  margin-bottom: 20px;
+}
+
+.fade-out-confetti {
+  animation: fadeOutConfetti 3s ease-in-out forwards; /* Adjust the duration as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes fadeOutConfetti {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* MatchAnimation.css */
+.backdrop-collab {
+  z-index: 99;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-photo {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .tinder-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .filters-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .distance-filter,
+  .settings-icon,
+  .show-filter,
+  .paid-filter {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

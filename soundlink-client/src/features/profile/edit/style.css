@@ -1,0 +1,143 @@
+.edit-container {
+  min-height: 110vh;
+  background-color: #201139;
+  padding-top: 70px;
+}
+
+.edit-title {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.edit-box {
+  width: 60%;
+  background-color: black;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.edit-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.edit-pic {
+  width: 300px;
+  margin: auto;
+  padding: 40px;
+}
+
+.edit-title {
+  color: white;
+  margin: 10px;
+}
+
+.edit-box .radio-button {
+  background: #201139;
+  text-align: center;
+  line-height: 36px;
+  color: #8c46fe;
+  border: 1px solid #8c46fe;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 70px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.edit-box .radio-button-selected {
+  background: #8c46fe;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 70px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.edit-box.radio-button:hover {
+  background: #ddd;
+}
+
+.edit-box.radio-button-selected:hover {
+  background: 8c46fe;
+}
+
+.edit-box.radio-button-step4 {
+  background: #201139;
+  text-align: center;
+  line-height: 36px;
+  color: #8c46fe;
+  border: 1px solid #8c46fe;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 80px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.edit-box.radio-button-selected-step4 {
+  background: #8c46fe;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 80px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.edit-box .radio-button:hover-step4 {
+  background: #ddd;
+}
+
+.edit-box .radio-button-selected:hover-step4 {
+  background: #8c46fe;
+}
+
+.save-edit-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background: var(--Accent, #8c46fe);
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Assistant;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 18px; /* 72% */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.edit-box .disabled {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background: var(--Accent, grey);
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Assistant;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 18px; /* 72% */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 920px) {
+  .edit-box {
+    width: 100%;
+  }
+}

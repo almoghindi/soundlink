@@ -1,0 +1,86 @@
+.signup-step2-title {
+  text-align: center;
+}
+.dialog-container {
+  text-align: center;
+}
+.centered-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-step {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.radio-button {
+  background: #201139;
+  text-align: center;
+  line-height: 36px;
+  color: #8c46fe;
+  border: 1px solid #8c46fe;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 82px;
+  padding: 7px;
+  font-size: 18px;
+}
+
+.radio-button-selected {
+  background: #8c46fe;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 82px;
+  padding: 7px;
+  font-size: 18px;
+}
+
+.radio-button:hover {
+  background: #ddd;
+}
+
+.radio-button-selected:hover {
+  background: 8c46fe;
+}
+
+.radio-button-step4 {
+  background: #201139;
+  text-align: center;
+  line-height: 36px;
+  color: #8c46fe;
+  border: 1px solid #8c46fe;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 82px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.radio-button-selected-step4 {
+  background: #8c46fe;
+  text-align: center;
+  line-height: 36px;
+  color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 82px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.radio-button:hover-step4 {
+  background: #ddd;
+}
+
+.radio-button-selected:hover-step4 {
+  background: #8c46fe;
+}

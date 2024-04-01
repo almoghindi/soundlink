@@ -1,0 +1,190 @@
+.launch-page {
+  background-image: url("../../assets/aboutus-pic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  font-family: "Assistent", sans-serif;
+}
+
+.launch-page .section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.launch-page .section1 .section1-title {
+  margin-top: 227px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(89deg, #c5a1ff 37.56%, #fff 85.74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 70px;
+
+  /* Add animation properties */
+  animation: moveColors 5s infinite linear;
+  background-size: 300% 100%; /* Set the background size to three times the width */
+}
+
+/* Define the keyframes for the animation */
+@keyframes moveColors {
+  0% {
+    background-position: 0% 50%; /* Start from the left */
+  }
+  50% {
+    background-position: 100% 50%; /* Move to the right */
+  }
+  100% {
+    background-position: 0% 50%; /* Move back to the left */
+  }
+}
+
+.launch-page .section1 span {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  float: left;
+  text-decoration: underline;
+}
+.section1-scrolling {
+  float: left;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.launch-page .gradient-div {
+  width: 100%;
+  height: 30vh; /* Use vh units for responsive height */
+  background: linear-gradient(180deg, rgba(32, 17, 57, 0) 0%, #201139 31.38%);
+}
+
+.container-launch .section2 {
+  background-color: #201139;
+  margin: 0;
+}
+.container-launch .section2-container {
+  margin: auto;
+  padding: 30px;
+  width: 70%;
+}
+
+.container-launch .section2-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.container-launch .section2-left-card {
+  display: block;
+  text-align: left;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  margin: auto;
+}
+.container-launch .section2-right-card {
+  display: block;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.container-launch .section2-card {
+  float: left;
+  /* margin-left: 140px; */
+  font-weight: 700;
+  /* margin-right: 140px; */
+}
+
+.container-launch .section2 h1 {
+  color: #8c46fe;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+.container-launch .card-img {
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.container-launch .card-img-mobile {
+  display: none;
+}
+
+.container-launch .span-comment {
+  color: red;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .launch-page {
+    background-size: cover;
+  }
+  .launch-page .section1 {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .launch-page .section1 .section1-title {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  .section1-scrolling {
+    padding: 0;
+  }
+  .section1-scrolling span {
+    font-size: 12px;
+  }
+
+  .container-launch .section2-right-card {
+    margin: 0;
+  }
+
+  .container-launch .card-img {
+    display: none;
+  }
+
+  .container-launch .card-img-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .container-launch .gradient-div {
+    height: 70px;
+  }
+  .container-launch .section2-left-card {
+    margin: 0;
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-launch .section2-part1 h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .container-launch .section2-card p {
+    font-weight: 400;
+    font-family: Assistant;
+    text-align: center;
+  }
+
+  .container-launch .span-comment {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

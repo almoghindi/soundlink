@@ -1,0 +1,187 @@
+/* .container-home {
+  height: 100vh;
+} */
+
+.home-page {
+  background-image: url("../../assets/home-page-pic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  font-family: "Assistent", sans-serif;
+}
+.home-page .section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.home-page .section1-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-page .section1 .section1-title {
+  /* margin-top: 180px;
+  margin-bottom: 10px; */
+  background-image: linear-gradient(89deg, #c5a1ff 37.56%, #fff 85.74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+  /* Add animation properties */
+  animation: moveColors 5s infinite linear;
+  background-size: 300% 100%; /* Set the background size to three times the width */
+}
+
+/* Define the keyframes for the animation */
+@keyframes moveColors {
+  0% {
+    background-position: 0% 50%; /* Start from the left */
+  }
+  25% {
+    background-position: 50% 0%; /* Move to the top */
+  }
+  50% {
+    background-position: 100% 50%; /* Move to the right */
+  }
+  75% {
+    background-position: 50% 100%; /* Move to the bottom */
+  }
+  100% {
+    background-position: 0% 50%; /* Move back to the left */
+  }
+}
+
+.home-page .section1 span {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: Assistant;
+}
+.home-page .gradient-div {
+  width: 100%;
+  height: 30vh; /* Use vh units for responsive height */
+  background: linear-gradient(180deg, rgba(32, 17, 57, 0) 0%, #201139 50.38%);
+}
+
+.container-home .video {
+  width: 50%;
+  height: 50vh;
+  background-color: #201139;
+}
+
+.container-home .section2 {
+  background-color: #201139;
+  margin: 0;
+  /* display: block; */
+  padding: 20px;
+  margin-top: 80px;
+}
+.container-home .section2-container {
+  margin: auto;
+  width: 80%;
+}
+
+.container-home .section2-part1 {
+  /* display: flex;
+  align-items: start;
+  justify-content: center; */
+  color: white;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: auto;
+}
+
+.container-home .section2-left-card {
+  display: block;
+  text-align: left;
+  margin-right: 100px;
+}
+.container-home .section2-right-card {
+  display: block;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.container-home .section2-card {
+  float: left;
+  /* margin-left: 140px; */
+  font-weight: 400;
+  /* margin-right: 140px; */
+  font-family: Assistant;
+}
+
+.container-home .section2-card h1 {
+  font-size: 2.5em;
+  font-family: Assistant;
+}
+
+.container-home .card-img {
+  margin-bottom: 40px;
+  width: 35%;
+}
+@media screen and (max-width: 1300px) {
+  .section1 .section1-title {
+    font-size: 3rem;
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .home-page {
+    background-size: cover;
+  }
+  .home-page .section1 {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page .section1 .section1-title {
+    font-size: 3rem;
+    margin-top: 70px;
+    line-height: 50px;
+  }
+
+  .container-home .section2 {
+    padding: 0;
+  }
+  .container-home .section2-container {
+    width: 100%;
+  }
+  .container-home .section2-part1 h1 {
+    font-size: 25px;
+  }
+  .container-home .section2-part1 {
+    width: 80%;
+    padding: 15px;
+  }
+  .container-home .section2-right-card {
+    margin: 0;
+  }
+  .container-home .section2-left-card {
+    margin: 0;
+  }
+  .container-home .card-img {
+    display: none;
+  }
+  .container-home .gradient-div {
+    height: 70px;
+  }
+
+  .container-home .section2-span {
+    font-size: 10px;
+  }
+}

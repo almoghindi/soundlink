@@ -1,0 +1,132 @@
+/* .menu {
+  width: 100px;
+} */
+
+.menu ul {
+  position: absolute;
+  top: 60px; /* Adjust the top position to match your design */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  z-index: 10; /* Ensure the menu appears above other elements */
+}
+
+.menu li {
+  color: #9900ff;
+  display: block;
+  transform-origin: -20px 50%;
+  font-family: Assistant, sans-serif;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.menu button {
+  -webkit-appearance: button;
+  background: transparent;
+  color: #9900ff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu input {
+  accent-color: white;
+}
+
+.menu .controls {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.menu label {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu .item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: white;
+  color: #9900ff;
+  font-size: 240px;
+  line-height: 260px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+/* Add this to your existing or new stylesheet */
+
+.menu .burger-icon {
+  position: absolute;
+  top: 15px; /* Adjust the top position as needed */
+  left: 15px; /* Adjust the right position as needed */
+  cursor: pointer;
+}
+
+/* Styling for the burger lines in their default state */
+.menu .burger-line-1 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+  transform: rotate(0) translateY(0);
+}
+
+.menu .burger-line-2 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.menu .burger-line-3 {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+  transform: rotate(0) translateY(0);
+}
+
+/* Styling for the burger lines when the menu is open */
+.menu .burger-icon.open .burger-line-1 {
+  transform: rotate(35deg) translateY(0px);
+}
+
+.menu .burger-icon.open .burger-line-2 {
+  opacity: 0;
+}
+
+.menu .burger-icon.open .burger-line-3 {
+  transform: rotate(-35deg) translateY(-16px);
+}
